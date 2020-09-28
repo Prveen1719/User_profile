@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+   rel="stylesheet">
+
+</head>
+<body>
+    <div class="pro_container">
+        <center>
+        <img class="hero" src="https://microhealth.com/assets/images/illustrations/personal-user-illustration-@2x.png"
+             alt="user" >
+        </center> 
+
+        <center><h2>Praven Peiris</h3></center>
+        <div class="form_box_1" id="inform">
+            <h4>Personal information------------------------</h4>
+            <p><i class="fa fa-user">  username</i></p>
+            <p><i class="fa fa-envelope-o">  praveen.peiris.pp@gmil.com</i></p>
+            <p><i class="fa fa-calendar">  04/10/2000</i></p>
+            <p><i class="fa fa-map-marker">  No 3A, 'Bhagya', Sethsiri Uyana, Dankotuwa.</i></p>
+
+            <h4>Payment information------------------------</h4>
+            <p><i class="fa fa-credit-card"> xxxx-xxxx-xxxx-xxxx</i></p>
+            
+            <button class="edit_btn edb1" onclick="edit()">Edit profile</button>
+           
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <form class="form_box_2" id= "edit_f">
+            <label for="Username"> Username</label><br>
+            <input type="text" placeholder="Enter username" name="username" required><br><br>
+            <label for="emil"> E-mail</label><br>
+            <input type="text" placeholder="Enter email" name="email" required><br><br>
+            <label for="number"> phone number</label><br>
+            <input type="digits" placeholder="Enter username" name="username" required><br><br>
+            <label for="Username"> Date of birth</label><br>
+            <input type="date" placeholder="Enter Date of birth" name="username" required><br><br>
+            <label for="Username"> Address</label><br>
+            <input type="text" placeholder="Enter username" name="username" required><br><br>
+            <p>Payment details</p>
+            <label for="Username"> Card number</label><br>
+            <input type="text" placeholder="Enter card number" name="username" required><br><br>
+            <label for="Username"> Card number</label><br>
+            <input type="text" placeholder="Enter card number" name="username" required><br><br>
+            <label for="Username"> Card number</label><br>
+            <input type="text" placeholder="Enter card number" name="username" required><br><br>
+            
+
+            <button class="edit_btn edb1" onclick="save()">Edit profile</button>
+        </form>
+
+
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("inform");
+		var y = document.getElementById("edit_f");
+		
+
+		function edit(){
+			x.style.left = "-400px";
+			y.style.left = "10px";
+			
+		}
+		function save(){
+			x.style.left = "10px";
+			y.style.left = "550px";
+				
+		}
+
+    </script>
+</body>
+</html>
